@@ -33,10 +33,6 @@ lsp.tsserver.setup {
     root_dir = lsp.util.root_pattern('*');
 }
 
--- lua
--- (pacman -S lua-language-server)
-lsp.sumneko_lua.setup {}
-
 -- Setup CMP
 local cmp = require('cmp')
 local luasnip = require('luasnip')
