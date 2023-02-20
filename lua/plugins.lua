@@ -13,12 +13,13 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
 
     -- color scheme
-    use 'ellisonleao/gruvbox.nvim'
+    use 'olivercederborg/poimandres.nvim'
 
     -- lualine
     use 'nvim-lualine/lualine.nvim'
 
     -- Bufferline
+    -- TODO: check https://github.com/romgrk/barbar.nvim
     use 'akinsho/bufferline.nvim'
 
     -- Nvim Tree
@@ -61,6 +62,9 @@ return require('packer').startup(function(use)
 
     -- todo comments
     use 'folke/todo-comments.nvim'
+
+    -- hop (navigation)
+    use 'phaazon/hop.nvim'
 
     -- Put this at the end after all plugins
     if packer_bootstrap then

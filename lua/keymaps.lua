@@ -42,6 +42,9 @@ map('n', '<Leader>gr', '<cmd>lua require("telescope.builtin").lsp_references()<C
 map('n', '<Leader>er', '<cmd>lua vim.lsp.buf.rename()<CR>') -- element - rename
 map('', '<Leader>ea', '<cmd>lua vim.lsp.buf.code_action()<CR>') -- element - code action
 
+-- jump [j]
+map('n', '<Leader>j', '<cmd>HopPattern<CR>')
+
 
 -- tabs
 map('n', '<Leader>1', '<cmd>BufferLineGoToBuffer 1<CR>')

@@ -3,8 +3,8 @@ local opt = vim.opt
 local g = vim.g
 
 -- Color scheme
-opt.termguicolors = true
-cmd'colorscheme gruvbox'
+require('poimandres').setup()
+cmd'colorscheme poimandres'
 
 -- Outers
 require('plugins/treesitter')
@@ -16,3 +16,6 @@ require('bufferline').setup()
 require('lsp_signature').setup()
 require('telescope').setup()
 require('lualine').setup()
+require('hop').setup()
+
+require('todo-comments').setup()
