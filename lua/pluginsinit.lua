@@ -3,8 +3,7 @@ local opt = vim.opt
 local g = vim.g
 
 -- Color scheme
-require('poimandres').setup()
-cmd'colorscheme poimandres'
+cmd'colorscheme dracula'
 
 -- Outers
 require('plugins/treesitter')
