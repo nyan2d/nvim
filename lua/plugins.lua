@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
 
     -- color scheme
-    use 'Mofiqul/dracula.nvim'
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     -- lualine
     use 'nvim-lualine/lualine.nvim'
