@@ -103,6 +103,7 @@ require("lazy").setup({
         config = function()
             local lspconfig = require("lspconfig")
             local capabilities = vim.lsp.protocol.make_client_capabilities()
+            capabilities.textDocument.completion.completionItem.snippetSupport = true
             -- golang
             lspconfig.gopls.setup{}
             -- c
