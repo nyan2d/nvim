@@ -1,6 +1,7 @@
 -- Options
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.ruler = false
 vim.opt.mouse = "a"
 vim.opt.rnu = true
 vim.opt.swapfile = false
@@ -18,8 +19,10 @@ vim.opt.autoindent = true
 vim.opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+vim.g.mapleader = " "
 vim.opt.termguicolors = true
 vim.opt.completeopt = "menu,menuone,noinsert"
+vim.opt.laststatus = 3
 
 -- Keybindings
 vim.keymap.set("x", "J", ":move \'>+1<cr>gv-gv", { noremap = true, silent = true })
@@ -48,15 +51,12 @@ require("lazy").setup({
         lazy = true,
     },
     {
-        "ellisonleao/gruvbox.nvim",
+        -- "ellisonleao/gruvbox.nvim",
+        "Mofiqul/dracula.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            require("gruvbox").setup{
-                transparent_mode = true
-            }
-            vim.o.background = "dark"
-            vim.cmd([[colorscheme gruvbox]])
+            vim.cmd([[colorscheme dracula-soft]])
         end,
     },
     {
@@ -68,6 +68,8 @@ require("lazy").setup({
         "romgrk/barbar.nvim",
         lazy = false,
         keys = {
+            { "<Tab>", "<cmd>BufferNext<cr>", desc = "Go to next buffer" },
+            { "<S-Tab>", "<cmd>BufferPrevious<cr>", desc = "Go to previous buffer" },
             { "<leader>1", "<cmd>BufferGoto 1<cr>", desc = "Go to buffer 1" },
             { "<leader>2", "<cmd>BufferGoto 2<cr>", desc = "Go to buffer 2" },
             { "<leader>3", "<cmd>BufferGoto 3<cr>", desc = "Go to buffer 3" },
