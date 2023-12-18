@@ -6,3 +6,6 @@ require("variables")
 
 -- lazy plugin manager
 require("lazy").setup("plugins")
+
+-- keymaps
+require("keymaps")

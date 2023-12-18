@@ -19,3 +19,5 @@ vim.opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGH
 vim.opt.termguicolors = true
 vim.opt.completeopt = "menu,menuone,noinsert"
 vim.opt.laststatus = 3
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1

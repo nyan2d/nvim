@@ -7,6 +7,7 @@ return {
             capabilities.textDocument.completion.completionItem.snippetSupport = true
             -- golang [ go install golang.org/x/tools/gopls@latest ]
             lspconfig.gopls.setup{}
+
             -- c [ pacman -S clang ]
             lspconfig.clangd.setup{}
             -- python [ pip install 'python-lsp-server[all]' ]
