@@ -5,6 +5,9 @@ return {
             "nvim-tree/nvim-web-devicons",
         },
         lazy = false,
+        opts = {
+            auto_hide = 0,
+        },
         keys = {
             { "<Tab>", "<cmd>BufferNext<cr>", desc = "Go to next buffer" },
             { "<S-Tab>", "<cmd>BufferPrevious<cr>", desc = "Go to previous buffer" },
