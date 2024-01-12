@@ -6,12 +6,18 @@ return {
             local capabilities = vim.lsp.protocol.make_client_capabilities()
             capabilities.textDocument.completion.completionItem.snippetSupport = true
             -- golang [ go install golang.org/x/tools/gopls@latest ]
-            lspconfig.gopls.setup{}
+            lspconfig.gopls.setup{
+                capabilities = capabilities,
+            }
 
             -- c [ pacman -S clang ]
-            lspconfig.clangd.setup{}
+            lspconfig.clangd.setup{
+                capabilities = capabilities,
+            }
             -- python [ pip install 'python-lsp-server[all]' ]
-            lspconfig.pylsp.setup{}
+            lspconfig.pylsp.setup{
+                capabilities = capabilities,
+            }
             -- html [ npm install -g vscode-langservers-extracted ]
             lspconfig.html.setup{
                 capabilities = capabilities,
