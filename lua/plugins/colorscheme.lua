@@ -1,17 +1,17 @@
 -- return {
 --     {
---         "Mofiqul/dracula.nvim",
+--         "kyazdani42/blue-moon",
 --         config = function()
---             vim.cmd.colorscheme("dracula-soft")
+--             vim.cmd.colorscheme("blue-moon")
 --         end,
 --     },
 -- }
 
 return {
     {
-        "kyazdani42/blue-moon",
+        "kdheepak/monochrome.nvim",
         config = function()
-            vim.cmd.colorscheme("blue-moon")
+            vim.cmd.colorscheme("monochrome")
         end,
     },
 }
