@@ -16,8 +16,7 @@ return {
     },
     {
         'saghen/blink.cmp',
-
-        dependencies = { 
+        dependencies = {
             { 'L3MON4D3/LuaSnip' },
         },
 
@@ -45,4 +44,3 @@ return {
         opts_extend = { "sources.default" },
     }
 }
-
