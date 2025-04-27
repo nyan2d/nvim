@@ -26,16 +26,45 @@ return {
             keymap = {
                 preset = 'default',
 
-                ['<Tab>'] = { 'select_next', 'fallback' },
-                ['<S-Tab>'] = { 'select_prev', 'fallback' },
-                ['<Return>'] = { 'select_and_accept', 'fallback' },
+                ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+                ["<C-e>"] = { "hide", "fallback" },
+                ["<Tab>"] = {
+                    function(cmp)
+                        return cmp.select_next()
+                    end,
+                    "snippet_forward",
+                    "fallback",
+                },
+                ["<S-Tab>"] = {
+                    function(cmp)
+                        return cmp.select_prev()
+                    end,
+                    "snippet_backward",
+                    "fallback",
+                },
+                ['<CR>'] = { 'select_and_accept', 'fallback' },
             },
             completion = {
-                ghost_text = { enabled = true },
-                accept = { auto_brackets = { enabled = true } },
+                ghost_text = {
+                    enabled = true
+                },
+                accept = {
+                    auto_brackets = {
+                        enabled = true
+                    }
+                },
+                menu = {
+                    draw = {
+                        treesitter = { "lsp" },
+                    },
+                },
+                documentation = {
+                    auto_show = true,
+                    auto_show_delay_ms = 700,
+                },
             },
             sources = {
-                default = { 'lsp', 'path', 'snippets', 'buffer' },
+                default = { "lsp", "path", "snippets", "buffer" }
             },
             fuzzy = { implementation = "lua" },
             signature = { enabled = true },
