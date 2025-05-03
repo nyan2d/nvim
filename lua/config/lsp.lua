@@ -10,3 +10,5 @@ vim.lsp.enable('lua_ls')
 vim.lsp.enable('html')
 -- npm i -g typescript-language-server typescript
 vim.lsp.enable('ts_ls')
+-- pacman -S clang
+vim.lsp.enable('clangd')
