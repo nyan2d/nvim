@@ -1,0 +1,25 @@
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.ruler = false
+vim.opt.mouse = "a"
+vim.opt.rnu = true
+vim.opt.swapfile = false
+vim.opt.showmatch = true
+vim.opt.ignorecase = true
+vim.opt.hidden = true
+vim.opt.splitright = true
+vim.wo.wrap = false
+vim.wo.fillchars = "eob: "
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.smartindent = false
+vim.opt.autoindent = true
+vim.opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
+vim.opt.termguicolors = true
+vim.opt.completeopt = "menu,menuone,noinsert"
+vim.opt.laststatus = 3
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+-- use system clipboard
+vim.opt.clipboard   = "unnamedplus"
