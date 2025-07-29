@@ -14,7 +14,15 @@ return {
                     "markdown",
                     "comment", -- todo, hack, fixme etc
                     "bash",
-                    "python"
+                    "python",
+                    "html", -- web
+                    "css",
+                    "javascript",
+                    "typescript",
+                    "vue",
+                    "sql",
+                    "yaml",
+                    "json"
                 }
             }
         end
