@@ -12,3 +12,5 @@ vim.lsp.enable('html')
 vim.lsp.enable('ts_ls')
 -- pacman -S clang
 vim.lsp.enable('clangd')
+-- npm i -g @vue/language-server
+require("config.vue_ls")
