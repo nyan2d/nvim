@@ -28,3 +28,14 @@ map('n', '<leader>ea', '<cmd>lua vim.lsp.buf.code_action()<cr>')
 -- rename element
 map('n', '<leader>er', '<cmd>lua vim.lsp.buf.rename()<cr>')
 
+
+-- barbar:
+map('n', '<leader>1', '<cmd>BufferGoto 1<cr>')
+map('n', '<leader>2', '<cmd>BufferGoto 2<cr>')
+map('n', '<leader>3', '<cmd>BufferGoto 3<cr>')
+map('n', '<leader>4', '<cmd>BufferGoto 4<cr>')
+map('n', '<leader>5', '<cmd>BufferGoto 5<cr>')
+map('n', '<leader>6', '<cmd>BufferGoto 6<cr>')
+map('n', '<leader>7', '<cmd>BufferGoto 7<cr>')
+map('n', '<leader>8', '<cmd>BufferGoto 8<cr>')
+map('n', '<leader>9', '<cmd>BufferGoto 9<cr>')
